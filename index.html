@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio tailwind Irfan</title>
+    <link href="src/output.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-9999">
+        <div class="loader w-12 h-12 border-4 border-slate-300 border-t-sky-500 rounded-full animate-spin"></div>
+    </div>
+    <!-- END PRELOADER -->
+    <!-- Header Start  -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-sky-400  left-14 block py-6">𝙄𝙧𝙛𝙖𝙣 𝙎𝙚𝙩𝙞𝙖𝙬𝙖𝙣</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex lg:items-center">
+                            <li class=" group">
+                            <a href="#home"
+                                class="text-base text-dark dark:text-white py-2 mx-8 flex group-hover:text-sky-400">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#gallery"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Gallery</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skills"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Skills</a>
+                            </li>
+                            <li class="group">
+                                <a href="#project"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Project</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400">Contacs</a>
+                            </li>
+                            <!-- 🔥 Dark Mode Toggle as Navbar Item -->
+                            <li class="group lg:ml-4 mt-3 lg:mt-0 mx-8 lg:mx-0">
+                                <button id="dark-toggle" class="relative w-10 h-9 rounded-full flex justify-center
+           bg-slate-200 dark:bg-slate-700 transition">
+                                    <span id="icon-sun-moon"
+                                        class="block w-7 h-6 transition-transform duration-500 ease-in-out">
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center gap-8 lg:gap-0">
+                <!-- Left Section Start -->
+                <div class="w-full px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-sky-400 md:text-xl">
+                        Hallo Semua 👋🏻, saya
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
+                           𝑰𝒓𝒇𝒂𝒏 𝑺𝒆𝒕𝒊𝒂𝒘𝒂𝒏
+                        </span>
+                    </h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 mt-3 lg:text-2xl">
+                        <span id="typingText" class="text-dark"></span>
+                        <span class="border-r-2 border-dark animate-pulse ml-1"></span>
+                    </h2>
+                    <p class="font-medium text-slate-400 mb-7 leading-relaxed">
+                       “Langkah kecil hari ini untuk karya
+                        <span class="text-dark font-bold">besar esok hari.”</span>
+                    </p>
+                    <a href="../idcard.html">
+                        <button class="text-base font-semibold text-white bg-sky-500 py-3 px-8 rounded-full 
+                               hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                        Kembali
+                    </button>
+                </a>
+                </div>
+                <!-- Left Section End -->
+                <!-- Right Section Start -->
+                <div class="w-full px-4 lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="relative mt-10 lg:mt-0">
+                        <img src="img/profil2.png" alt="Ifan"
+                            class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto" />
+                        <!-- Dekorasi Blob -->
+                        <span class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
+                            <svg width="400" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#61bafa"
+                                    d="M70.9,-16.8C79.5,3.4,65.5,37.1,40.2,55.6C14.8,74.1,-21.9,77.4,-40.9,62.2C-60,46.9,-61.4,13.3,-51.6,-8.6C-41.9,-30.4,-20.9,-40.4,5.1,-42C31.2,-43.7,62.4,-37,70.9,-16.8Z"
+                                    transform="translate(100 100) scale(1.1)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <!-- Right Section End -->
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32 flex items-center justify-center h-screen">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center lg:items-center">
+                <!-- Left Content -->
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-sky-400 text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="font-bold text-dark text-3xl lg:text-4xl mb-5 max-w-md">
+                        Saya Adalah Mahasiswa Universitas Subang!
+                    </h2>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 max-w-xl leading-relaxed">
+                        dengan penguasaan bahasa pemrograman seperti CSS, HTML, dan PHP. Saya memiliki keterampilan dalam pengembangan, pembuatan dan desain website. Disiplin, mudah beradaptasi, serta memiliki jiwa kepemimpinan yang baik, siap berkontribusi pada peningkatan efisiensi dan inovasi kerja.
+                    </p>
+                </div>
+                <!-- Right Content -->
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl lg:text-3xl mb-4 lg:pt-6">
+                        Mari Berteman👋🏻
+                    </h3>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 mb-6 leading-relaxed">
+                        Lihat perjalanan, karya, dan cerita saya selengkapnya di profil ini 🚀
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="flex items-center flex-wrap gap-4">
+                        <a href="https://youtube.com/@ifan_stiwn1072?si=KpM_WzJU1zlCNVAH" target="_blank" class="social-btn" aria-label="YouTube">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ifan_setiawannnn?igsh=MTN5ZDJrc2Npdm80ZQ==" target="_blank" class="social-btn" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.bing.com/search?pglt=931&q=x&cvid=8bc66b816d7d42b9a9570f30170b2e8f&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQLhhAMgYIAhAuGEAyBggDEC4YQDIGCAQQABhAMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg8MgYICBBFGDzSAQgxNTg0ajBqMagCALACAA&FORM=ANNTA1&ucpdpc=UCPD&PC=ASTS" target="_blank" class="social-btn" aria-label="X / Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@ifaannnnnnnnn?_r=1&_t=ZS-92vhWAWLtEy" target="_blank" class="social-btn" aria-label="TikTok">
+                            <i data-lucide="music"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Gallery Section Start -->
+    <section id="gallery" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Gallery</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Gallery Saya</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">Galeri ini berisi momen kebersamaan saya bersama teman-teman, yang merekam cerita, tawa, dan kenangan berharga.</p>
+                </div>
+            </div>
+            <div class="w-full px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:w-10/12 xl:mx-auto">
+                <!-- Item -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/pkkmb.jpeg" alt="Image 1"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <!-- Overlay -->
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝒑𝒌𝒌𝒎𝒃 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/kos2.jpeg" alt="Image 2"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑾𝒂𝒓𝒌𝒐𝒑 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/kos.jpeg" alt="Image 4"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑺𝒊𝒔𝒇𝒐𝒎 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/irfan2.jpeg" alt="Image 4"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑷𝒂𝒔𝒂𝒏𝒈𝒈𝒓𝒂𝒉𝒂𝒏 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/irfan.jpeg" alt="Image 5"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑷𝒂𝒔𝒖𝒏𝒅𝒂𝒏 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/irfan3.jpeg"alt="Image 6"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑻𝒊𝒎𝒌𝒐𝒑 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/wcn1.jpeg" alt="Image 7"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑮𝒂𝒓𝒅𝒆𝒏 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/wcn2.jpeg" alt="Image 8"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑲𝒐𝒑𝒕𝒊 𝒓𝒂𝒚𝒂 | 2025</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="img/gallery/wcn3.jpeg" alt="Image 9"
+                        class="portfolio-img w-full h-60 object-cover cursor-pointer transition duration-500 group-hover:scale-110" />
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">𝑷𝒂𝒔𝒖𝒏𝒅𝒂𝒏 | 2025</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+    <div id="lightbox" class="fixed inset-0 hidden z-9999 bg-black/80 items-center justify-center">
+        <!-- Close -->
+        <button id="lightboxClose" class="absolute top-6 right-6 text-white text-3xl font-bold">
+            &times;
+        </button>
+        <!-- Prev -->
+        <button id="lightboxPrev"
+            class="absolute left-5 md:left-10 text-white text-4xl font-bold hover:text-sky-400 transition">
+            &#10094;
+        </button>
+        <!-- Image -->
+        <img id="lightboxImage"
+            class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl transition-transform duration-300 scale-95" />
+        <!-- Next -->
+        <button id="lightboxNext"
+            class="absolute right-5 md:right-10 text-white text-4xl font-bold hover:text-sky-400 transition">
+            &#10095;
+        </button>
+    </div>
+    <!--skills Section Start -->
+    <section id="skills" class="pt-36 pb-32 bg-linear-to-br from-slate-700 via-slate-800 to-slate-900 overflow-hidden flex items-center justify-center">
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-full px-4">
+                <div class="mx-auto max-w-xl text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Skills</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Keahlian yang Saya Kembangkan</h2>
+                    <p class="font-medium text-dark text-slate-500 md:text-lg">Keahlian yang saya pelajari dan kembangkan selama proses pembelajaran.</p>
+                </div>
+            </div>
+            <!-- Slider -->
+            <div class="relative w-full overflow-hidden">
+                <div class="client-slider flex items-center gap-10">
+                    <!-- DUPLIKASI LOGO (WAJIB UNTUK LOOP HALUS) -->
+                    <div class="client-item">
+                        <img src="img/clients/html5.png" alt="html"/>
+                    
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/css.png" alt="css" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/js.png" alt="js" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/bootstrap.png" alt="bootstrap" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/taildwin.png" alt="tailwind"/>
+                    </div>
+
+                    <!-- DUPLIKAT -->
+                    <div class="client-item">
+                        <img src="img/clients/html5.png" alt="html"/>
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/css.png" alt="css" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/js.png" alt="js" />
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/bootstrap.png" alt="bootstrap"/>
+                    </div>
+                    <div class="client-item">
+                        <img src="img/clients/taildwin.png" alt="taildwin"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills Section End -->
+    <!-- project Section Start -->
+    <section id="project" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Project</h4>
+                    <h2 class="font-bold text-slate-800 dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">
+                       Kumpulan Proyek
+                    </h2>
+                    <p class="font-medium text-slate-500 md:text-lg">
+                        Proyek tugas dan latihan yang saya kerjakan selama proses belajar.
+                    </p>
+                </div>
+            </div>
+            <!-- Project Grid -->
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:w-10/12 xl:mx-auto px-4">
+                <!-- Project Card -->
+                <article class="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden
+               transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="img/clients/porto.png"
+                            class="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+                            alt="projectImage" />
+                    </div>
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="mb-3">
+                            <a href="https://irfansetiawan006.github.io/porto/" class="block font-semibold text-xl text-slate-800 dark:text-white
+                      hover:text-sky-500 transition line-clamp-2">
+                                Website portofolio dengan menggunakan HTML&CSS
+                            </a>
+                        </h3>
+                        <p class="text-slate-500 mb-6 line-clamp-3">
+                            Proyek yang merepresentasikan kemampuan saya dalam membangun website dan sistem berbasis web.
+                        </p>
+                        <a href="https://irfansetiawan006.github.io/porto/" class="inline-flex items-center gap-1 text-sky-500 font-semibold text-sm
+                    transition-all group-hover:gap-2">
+                            Baca Selengkapnya
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden
+               transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="img/clients/cv.png"
+                            class="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+                            alt="Blog Image" />
+                    </div>
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="mb-3">
+                            <a href="https://irfansetiawan006.github.io/CV.JayaAbadi/" class="block font-semibold text-xl text-slate-800 dark:text-white
+                      hover:text-sky-500 transition line-clamp-2">
+                                Website CV.Jaya Abadi dengan menggunakan HTML,CSS, dan Java script
+                            </a>
+                        </h3>
+                        <p class="text-slate-500 mb-6 line-clamp-3">
+                            Website profil perusahaan CV Jaya Abadi yang menampilkan informasi layanan, profil perusahaan, dan portofolio pekerjaan sebagai media promosi dan branding digital.
+                        </p>
+                        <a href="https://irfansetiawan006.github.io/CV.JayaAbadi/" class="inline-flex items-center gap-1 text-sky-500 font-semibold text-sm
+                    transition-all group-hover:gap-2">
+                            Baca Selengkapnya
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden
+               transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Image -->
+                    <div class="relative overflow-hidden">
+                        <img src="img/clients/manajemen.png"
+                            class="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+                            alt="Blog Image" />
+                    </div>
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="mb-3">
+                            <a href="https://irfansetiawan006.github.io/ManajemenTugas/" class="block font-semibold text-xl text-slate-800 dark:text-white
+                      hover:text-sky-500 transition line-clamp-2">
+                                Website Manajemen Tugas dengan menggunakan HTML,CSS, dan Java script
+                            </a>
+                        </h3>
+                        <p class="text-slate-500 mb-6 line-clamp-3">
+                            Website manajemen tugas berbasis web yang dirancang untuk membantu pengguna mengatur, memantau, dan menyelesaikan tugas secara terstruktur dan efisien.
+                        </p>
+                        <a href="https://irfansetiawan006.github.io/ManajemenTugas/" class="inline-flex items-center gap-1 text-sky-500 font-semibold text-sm
+                    transition-all group-hover:gap-2">
+                            Baca Selengkapnya
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- project Section End -->
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 bg-slate-50 dark:bg-slate-900 flex items-center justify-center">
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-full px-4">
+                <div class="max-w-2xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-sky-400 mb-2">Contact</h4>
+                    <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl text-slate-800 dark:text-white mb-4">
+                        Hubungi Saya
+                    </h2>
+                    <p class="text-slate-500 md:text-lg">
+                        Saya terbuka untuk berdiskusi, berbagi ide, dan bekerja sama.
+                    </p>
+                </div>
+            </div>
+            <!-- Card Form -->
+            <div class="w-full px-4">
+                <div class="max-w-2xl mx-auto bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 sm:p-10">
+
+                    <form id="contactForm" class="space-y-8">
+                        <!-- Nama -->
+                        <div class="relative">
+                            <input type="text" id="name" required class="peer w-full bg-transparent border border-slate-300 dark:border-slate-600 
+                     text-slate-800 dark:text-white p-4 rounded-xl outline-none
+                     focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition" />
+                            <label for="name" class="absolute left-4 top-4 text-slate-500 
+                     peer-focus:text-sky-400 peer-focus:-top-3 peer-focus:text-sm
+                     peer-valid:-top-3 peer-valid:text-sm
+                     bg-white dark:bg-slate-800 px-1 transition">
+                                Nama
+                            </label>
+                        </div>
+                        <!-- Email -->
+                        <div class="relative">
+                            <input type="email" id="email" required class="peer w-full bg-transparent border border-slate-300 dark:border-slate-600 
+                     text-slate-800 dark:text-white p-4 rounded-xl outline-none
+                     focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition" />
+                            <label for="email" class="absolute left-4 top-4 text-slate-500 
+                     peer-focus:text-sky-400 peer-focus:-top-3 peer-focus:text-sm
+                     peer-valid:-top-3 peer-valid:text-sm
+                     bg-white dark:bg-slate-800 px-1 transition">
+                                Email
+                            </label>
+                        </div>
+                        <!-- Pesan -->
+                        <div class="relative">
+                            <textarea id="message" rows="4" required class="peer w-full bg-transparent border border-slate-300 dark:border-slate-600 
+                     text-slate-800 dark:text-white p-4 rounded-xl outline-none resize-none
+                     focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition"></textarea>
+                            <label for="message" class="absolute left-4 top-4 text-slate-500 
+                     peer-focus:text-sky-400 peer-focus:-top-3 peer-focus:text-sm
+                     peer-valid:-top-3 peer-valid:text-sm
+                     bg-white dark:bg-slate-800 px-1 transition">
+                                Pesan
+                            </label>
+                        </div>
+                        <!-- Button -->
+                        <button type="submit" class="w-full bg-linear-to-r  hover:bg-sky-600 from-sky-400 to-sky-500 
+                   hover:from-sky-500 hover:to-sky-600
+                   text-white-semibold text-dark py-3 rounded-full
+                   transition duration-300 hover:shadow-2xl active:scale-95">
+                            Kirim Pesan 🚀
+                        </button>
+                        <!-- Status -->
+                        <p id="formStatus" class="text-center text-sm"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-black pt-24 pb-12 flex items-center justify-center">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-3xl text-white mb-5">Irfan Setiawan</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
+                    <p>Setiawanirfan7342@gmail.com</p>
+                    <p>+62 857-5934-8541</p>
+                    <p>Subang</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Kategori </h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Teknologi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sistem Informasi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-sky-400 mb-3">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-sky-400 mb-3">About</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="inline-block text-base hover:text-sky-400 mb-3">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="inline-block text-base hover:text-sky-400 mb-3">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="inline-block text-base hover:text-sky-400 mb-3">Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-sky-400 mb-3">Contacs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-700">
+                <!-- Social Icons -->
+                <div class="flex items-center justify-center gap-4 mb-5">
+                    <a href="https://youtube.com/@ifan_stiwn1072?si=KpM_WzJU1zlCNVAH" target="_blank" class="social-btn" aria-label="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ifan_setiawannnn?igsh=MTN5ZDJrc2Npdm80ZQ==" target="_blank" class="social-btn" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://www.bing.com/search?pglt=931&q=x&cvid=8bc66b816d7d42b9a9570f30170b2e8f&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQLhhAMgYIAhAuGEAyBggDEC4YQDIGCAQQABhAMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg8MgYICBBFGDzSAQgxNTg0ajBqMagCALACAA&FORM=ANNTA1&ucpdpc=UCPD&PC=ASTS" target="_blank" class="social-btn" aria-label="X / Twitter">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ifaannnnnnnnn?_r=1&_t=ZS-92vhWAWLtEy" target="_blank" class="social-btn" aria-label="TikTok">
+                        <i data-lucide="music"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+                <!-- Footer Text -->
+                <p class="font-medium text-sm text-slate-500 text-center">
+                    Dibuat dengan
+                    <button id="loveBtn" class="relative inline-flex items-center justify-center text-pink-500 mx-1"
+                        aria-label="Love">
+                        <span id="loveIcon" class="inline-block leading-none select-none">❤️</span>
+                    </button>
+                    oleh
+                    <a href="https://www.instagram.com/ifan_setiawannnn?igsh=MTN5ZDJrc2Npdm80ZQ==" target="_blank" class="font-bold text-sky-400">
+                        Irfan Setiawan
+                    </a>,
+                    menggunakan
+                    <a href="https://www.bing.com/search?qs=OS&pq=taild&sk=CSYN1HS1OS2&sc=16-5&q=tailwind+css&cvid=b7384473d6ee4a95a8536b95731c9ff5&gs_lcrp=EgRlZGdlKgYIBBAAGEAyCQgAEEUYOxj5BzIGCAEQRRg5MgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEEUYPTIGCAcQRRg8MgYICBBFGDzSAQg1Mzg1ajBqOagCCLACAQ&FORM=ANAB01&ucpdpc=UCPD&PC=ASTS" target="_blank" class="font-bold text-sky-500">
+                        Tailwind CSS v4.1
+                    </a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-sky-500 text-white
+           shadow-lg flex items-center justify-center text-2xl
+           hover:bg-sky-600 transition-all duration-300 opacity-0">
+        ↑
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="src/script.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
